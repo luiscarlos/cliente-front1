@@ -6,7 +6,7 @@
     <div class="container">
         {{cliente.nome}}
 
-        <form #clienteform="appForm" (ngSubmit)="onSubmit()">
+        <form #clienteform="ngForm" (ngSubmit)="onSubmit()">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="imputId">ID:</label>

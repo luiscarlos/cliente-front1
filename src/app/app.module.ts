@@ -25,6 +25,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     TemplateModule,
     CommonModule,
+    NgModule
 
   ],
 
