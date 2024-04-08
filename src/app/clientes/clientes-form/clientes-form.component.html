@@ -4,9 +4,19 @@
     </ol>
 
     <div class="container">
-        {{cliente.nome}}
+      <form #clienteForm="ngForm" (ngSubmit)="onSubmit()">
 
-        <form #clienteform="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <div class="col-md-6">
+            <div class="alert alert-success" role="alert" *ngIf="sucess == true">
+              Cliente salva/atualizado com sucesso
+            </div>
+            <div class="alert alert-danger" role="alert" *ngFor="let erro of errors">
+              {{erro}}
+            </div>
+          </div>
+        </div>
+
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="imputId">ID:</label>

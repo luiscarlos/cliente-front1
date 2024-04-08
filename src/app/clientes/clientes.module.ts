@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
-import{FormsModule} from '@angular/forms'
 import { CommonModule } from '@angular/common';
-
+import{FormsModule} from '@angular/forms'
 import { ClientesRoutingModule } from './clientes-routing.module';
 import { ClientesFormComponent } from './clientes-form/clientes-form.component';
 
@@ -16,14 +15,13 @@ import { ClientesService } from '../clientes.service';
   imports: [
     CommonModule,
     ClientesRoutingModule,
-    FormsModule,
-    ClientesService,
-    NgModule
-  ],
-  exports:[
-    ClientesFormComponent,
-    ClientesService,
     FormsModule
+
+
+  ],
+
+  exports:[
+    ClientesFormComponent
   ]
 })
 export class ClientesModule { }
